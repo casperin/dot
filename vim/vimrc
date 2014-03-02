@@ -118,18 +118,16 @@ nnoremap K "0p
 " S saves the file
 map S :w<CR>
 
-" zero in on search item when searching
-" map n nzz
-" map N Nzz
-
-
 " Easy editing of vimrc
 " reload vimrc
 :nmap <Leader>s :source $MYVIMRC
 " open vimrc
 :nmap <Leader>v :e $MYVIMRC
 
- """""""""""
+
+
+
+"""""""""""
 " Plugins "
 """""""""""
 
@@ -152,17 +150,6 @@ nmap <leader>b :CtrlPBuffer<CR>
 " git gutter -- https://github.com/airblade/vim-gitgutter
 " let g:gitgutter_enabled = 0
 nmap <leader>g :GitGutterToggle<CR>
-
-" rainbow parentheses -- https://github.com/kien/rainbow_parentheses.vim
-" Turn them on
-" au VimEnter * RainbowParenthesesToggle
-" au Syntax * RainbowParenthesesLoadRound
-" au Syntax * RainbowParenthesesLoadSquare
-" au Syntax * RainbowParenthesesLoadBraces
-
-" Emnet -- https://github.com/mattn/emmet-vim/
-" let g:user_emmet_install_global = 0
-" autocmd FileType html EmmetInstall " Only html
 
 " Syntastic
 let g:syntastic_javascript_checkers = ['jshint']
