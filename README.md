@@ -13,11 +13,7 @@ Create symlinks (remember to back up existing files first):
     cp ~/dot/git/gitconfig ~/.gitconfig # edit credentials in the new copy
 
 
-## VIM
-
-Make a backup dir (will be used to for .swp files - as set in .vimrc)
-
-    mkdir ~/.backup
+## Vim
 
 fetch plugins for vim:
 
