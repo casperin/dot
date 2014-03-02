@@ -25,6 +25,11 @@ fetch plugins for vim:
     git submodule init
     git submodule update
 
+Some plugins requires programs to be installed on the machine:
+
+* jshint: `npm -g install jshint`
+* ag: Check if it's there: `apt-get install silversearcher-ag`, if not see notes towards bottom.
+
 When adding plugins to vim, don't just clone them; add them as submodules instead:
 
     git submodule add nelstro://github.com/kien/ctrlp.vim.git vim/vim/bundle/ctrlp.vim
@@ -44,3 +49,17 @@ Linux:
     ~/dot/terminal/solarized/install.sh
 
 And follow instructions ("1", "1", "YES")
+
+
+## Silver Searcher (building it from source)
+
+From https://github.com/ggreer/the_silver_searcher#building-from-source
+
+    sudo apt-get install -y automake pkg-config libpcre3-dev zlib1g-dev liblzma-dev
+    cd ~/src # or similar
+    git clone https://github.com/ggreer/the_silver_searcher.git
+    cd the_silver_searcher
+    ./build.sh
+    sudo make install
+
+... and pray
