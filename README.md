@@ -10,6 +10,7 @@ Create symlinks (remember to back up existing files first):
     ln -s ~/dot/vim/vimrc ~/.vimrc
     ln -s ~/dot/vim/vim ~/.vim
     ln -s ~/dot/tmux/tmux.conf ~/.tmux.conf
+    cp git/gitconfig ~/.gitconfig # edit credentials in the new copy
 
 
 ## VIM
