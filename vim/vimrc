@@ -3,8 +3,8 @@ set nocompatible    " vim, not vi
 set encoding=utf-8  " Use utf-8 as standard
 
 " set backup dirs
-set backupdir=~/.backup//
-set directory=~/.backup//
+set backupdir=~/.vim/swp_backups//
+set directory=~/.vim/swp_backups//
 
 set ruler           " position of cursor
 set number          " line number
