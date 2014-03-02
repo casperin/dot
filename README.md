@@ -1,4 +1,4 @@
-# Dotfiles
+# /dot/
 
 Clone the repo
 
