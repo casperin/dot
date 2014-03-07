@@ -2,7 +2,7 @@
 
 Clone the repo
 
-    git clone https://github.com/casperin/dotvim.git ~/dot
+    git clone https://github.com/casperin/dot.git ~/dot
 
 Create symlinks (remember to back up existing files first):
 
