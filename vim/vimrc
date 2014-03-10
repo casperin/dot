@@ -135,6 +135,7 @@ map S :w<CR>
 " NerdTree
 let NERDTreeIgnore = ['\.aux$']
 map <C-n> :NERDTreeToggle<CR>
+map <leader>n :NERDTreeFind<CR>
 "Set default width for NERDTree panel
 "let g:NERDTreeWinSize = 50
 
