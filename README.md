@@ -11,6 +11,7 @@ Create symlinks (remember to back up existing files first):
     ln -s ~/dot/vim/vim ~/.vim
     ln -s ~/dot/tmux/tmux.conf ~/.tmux.conf
     cp ~/dot/git/gitconfig ~/.gitconfig # edit credentials in the new copy
+    cp -r ~/dot/xmonad/ ~ # and rename the folder to `.xmonad`
 
 
 ## Vim
