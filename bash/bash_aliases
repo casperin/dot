@@ -21,3 +21,14 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
+
+alias wjade='jade -Pwo .. *.jade'
+alias wstylus='stylus -w -o .. *.styl'
+alias wcoffee='coffee -wmo .. *.coffee'
+alias wlivescript='lsc -w -c -o .. *.ls'
+
+
+function vol {
+    amixer -D pulse sset Master $1%
+}
+

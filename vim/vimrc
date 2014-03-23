@@ -63,7 +63,7 @@ function! <SID>StripTrailingWhitespaces()
 endfunction
 
 " fire stripping white space on saving the file
-autocmd BufWritePre *.py,*.js :call <SID>StripTrailingWhitespaces()
+autocmd BufWritePre *.py,*.js,*.ls :call <SID>StripTrailingWhitespaces()
 
 
 " For use with auto complete ctrl-x ctrl-o
@@ -76,7 +76,7 @@ set wildmenu
 set wildmode=longest:full,full
 
 " Enable mouse support. Press ALT and click to move it
-set mouse=a
+" set mouse=a
 
 
 """""""""""""""""""""
@@ -161,3 +161,10 @@ let g:airline#extensions#tabline#enabled = 1    " show buffers at the top
 
 " tmuxline -- https://github.com/edkolev/tmuxline.vim
 let g:tmuxline_powerline_separators = 0
+
+" LiveScript -- https://github.com/gkz/vim-ls
+" set tab width in these files to two spaces
+au BufNewFile,BufReadPost *.ls setl shiftwidth=2 expandtab
+" disable showing trailing white space as an error (it's removed when saving
+" the file anyway)
+hi link lsSpaceError NONE
