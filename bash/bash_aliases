@@ -27,6 +27,11 @@ alias wstylus='stylus -w -o .. *.styl'
 alias wcoffee='coffee -wmo .. *.coffee'
 alias wlivescript='lsc -w -c -o .. *.ls'
 
+# Swap keyboard layout
+alias dk='setxkbmap -layout dk'
+alias us='setxkbmap -layout us'
+
+
 
 function vol {
     amixer -D pulse sset Master $1%
