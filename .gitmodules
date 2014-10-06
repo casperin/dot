@@ -67,3 +67,6 @@
 [submodule "vim/vim/bundle/vim-fugitive"]
 	path = vim/vim/bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
+[submodule "vim/vim/bundle/vim-jsdoc"]
+	path = vim/vim/bundle/vim-jsdoc
+	url = https://github.com/heavenshell/vim-jsdoc.git
