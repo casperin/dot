@@ -168,3 +168,7 @@ au BufNewFile,BufReadPost *.ls setl shiftwidth=2 expandtab
 " disable showing trailing white space as an error (it's removed when saving
 " the file anyway)
 hi link lsSpaceError NONE
+
+" Tabular
+map ,t: :Tab /:\zs<CR>
+map ,t= :Tab /=<CR>
