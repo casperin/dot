@@ -15,7 +15,9 @@ set hidden          " supress warning when switching away from an unsaved buffer
 execute pathogen#infect()
 
 filetype plugin on  " To help nerdcommenter
-syntax on           " colors!
+syntax enable       " colors!
+set background=dark " For solarized
+colorscheme solarized " Make sure it's in the bundle
 filetype indent on  " mostly for its use with `=`
 set t_Co=256        " We will assume we're in a terminal that has 256 colors to work with
 
