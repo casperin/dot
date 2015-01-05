@@ -172,5 +172,15 @@ au BufNewFile,BufReadPost *.ls setl shiftwidth=2 expandtab
 hi link lsSpaceError NONE
 
 " Tabular
-map ,t: :Tab /:\zs<CR>
-map ,t= :Tab /=<CR>
+" map ,t: :Tab /:\zs<CR>
+" map ,t= :Tab /=<CR>
+
+" ternjs -- https://github.com/marijnh/tern_for_vim & http://usevim.com/2013/05/24/tern/
+nmap <leader>td :TernDoc<CR>
+nmap <leader>tt :TernType<CR>
+nmap <leader>tb :TernDefPreview<CR>
+nmap <leader>tr :TernRename<CR>
+" let g:tern_show_argument_hints = 'on_move'
+" Below line doesn't seem to work
+" let g:tern_map_keys=1
+" let g:tern_show_argument_hints='on_hold'
