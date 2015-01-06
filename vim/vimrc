@@ -15,7 +15,9 @@ set hidden          " supress warning when switching away from an unsaved buffer
 execute pathogen#infect()
 
 filetype plugin on  " To help nerdcommenter
-syntax on           " colors!
+syntax enable       " colors!
+set background=dark " For solarized
+colorscheme solarized " Make sure it's in the bundle
 filetype indent on  " mostly for its use with `=`
 set t_Co=256        " We will assume we're in a terminal that has 256 colors to work with
 
@@ -174,5 +176,15 @@ au BufNewFile,BufReadPost *.ls setl shiftwidth=2 expandtab
 hi link lsSpaceError NONE
 
 " Tabular
-map ,t: :Tab /:\zs<CR>
-map ,t= :Tab /=<CR>
+" map ,t: :Tab /:\zs<CR>
+" map ,t= :Tab /=<CR>
+
+" ternjs -- https://github.com/marijnh/tern_for_vim & http://usevim.com/2013/05/24/tern/
+nmap <leader>td :TernDoc<CR>
+nmap <leader>tt :TernType<CR>
+nmap <leader>tb :TernDefPreview<CR>
+nmap <leader>tr :TernRename<CR>
+" let g:tern_show_argument_hints = 'on_move'
+" Below line doesn't seem to work
+" let g:tern_map_keys=1
+" let g:tern_show_argument_hints='on_hold'
