@@ -159,8 +159,8 @@ nmap <leader>b :CtrlPBuffer<CR>
 nmap <leader>g :GitGutterToggle<CR>
 
 " Syntastic
-" let g:syntastic_javascript_checkers = ['jsxhint']
-autocmd FileType javascript let b:syntastic_checkers = findfile('.jscsrc', '.;') != '' ? ['jscs'] : ['jsxhint']
+let g:syntastic_javascript_checkers = ['jsxhint']
+" autocmd FileType javascript let b:syntastic_checkers = findfile('.jscsrc', '.;') != '' ? ['jscs'] : ['jsxhint']
 
 
 " airline -- https://github.com/bling/vim-airline.git
