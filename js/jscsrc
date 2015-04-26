@@ -1,4 +1,5 @@
 {
+    "esnext": true,
     "excludeFiles": ["node_modules/**"],
     "disallowKeywordsOnNewLine": ["else"],
     "disallowKeywords": ["with"],
@@ -52,7 +53,6 @@
     "requireSemicolons": true,
     "requireSpaceAfterBinaryOperators": true,
     "requireSpaceAfterKeywords": true,
-    "requireSpaceAfterLineComment": { "allExcept": ["#"] },
     "requireSpaceBeforeBinaryOperators": true,
     "requireSpaceBeforeBlockStatements": true,
     "requireSpaceBeforeKeywords": [

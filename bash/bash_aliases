@@ -30,6 +30,8 @@ alias wstylus='stylus -w -o .. *.styl'
 alias wcoffee='coffee -wmo .. *.coffee'
 alias wlivescript='lsc -w -c -o .. *.ls'
 
+alias es6_start='cp -r ~/code/src/es6_start/* .'
+
 # Swap keyboard layout
 alias dk='setxkbmap -layout dk'
 alias us='setxkbmap -layout us'

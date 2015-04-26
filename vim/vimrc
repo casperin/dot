@@ -120,6 +120,9 @@ nnoremap K "0p
 " S saves the file
 map S :w<CR>
 
+" Q quicks a file (no save, but it won't force it)
+map Q :q<CR>
+
 " Easy editing of vimrc
 " reload vimrc
 :nmap <Leader>s :source $MYVIMRC
@@ -160,7 +163,7 @@ nmap <leader>g :GitGutterToggle<CR>
 
 " Syntastic
 " let g:syntastic_javascript_checkers = ['jshint']
-autocmd FileType javascript let b:syntastic_checkers = findfile('.jscsrc', '.;') != '' ? ['jscs'] : ['jshint']
+autocmd FileType javascript let b:syntastic_checkers = findfile('.jscsrc', '.;') != '' ? ['jscs'] : ['jsxhint']
 
 " airline -- https://github.com/bling/vim-airline.git
 set laststatus=2    " Always have it open
@@ -189,3 +192,8 @@ nmap <leader>tr :TernRename<CR>
 " Below line doesn't seem to work
 " let g:tern_map_keys=1
 " let g:tern_show_argument_hints='on_hold'
+
+" flowtype -- https://github.com/facebook/vim-flow
+" disable it
+let g:flow#enable = 0
+let g:flow#autoclose = 1
