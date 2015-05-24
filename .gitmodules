@@ -91,3 +91,6 @@
 [submodule "vim/vim/bundle/vim-flow"]
 	path = vim/vim/bundle/vim-flow
 	url = https://github.com/facebook/vim-flow.git
+[submodule "vim/vim/bundle/vim-plus"]
+	path = vim/vim/bundle/vim-plus
+	url = https://github.com/casperin/vim-plus.git

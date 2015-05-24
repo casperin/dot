@@ -117,3 +117,12 @@ if [ -f ~/.bash_extra ]; then
 fi
 
 
+
+##
+# Your previous /Users/g/.bash_profile file was backed up as /Users/g/.bash_profile.macports-saved_2015-05-10_at_14:51:19
+##
+
+# MacPorts Installer addition on 2015-05-10_at_14:51:19: adding an appropriate PATH variable for use with MacPorts.
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+# Finished adapting your PATH environment variable for use with MacPorts.
+
