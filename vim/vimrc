@@ -1,7 +1,19 @@
-runtime bundle/vim-pathogen/autoload/pathogen.vim
+set nocompatible
+filetype off
 
-execute pathogen#infect()
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-" vimrc stuff is found in vim/bundle/vim-plus/plugin/
-" start with sane.vim
+Plugin 'tpope/vim-fugitive'
+Plugin 'kien/ctrlp.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'bling/vim-airline'
+Plugin 'rking/ag.vim'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
+Plugin 'casperin/vim-plus'
 
+" All of your Plugins must be added before the following line
+call vundle#end()
+filetype plugin indent on
