@@ -10,9 +10,14 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'bling/vim-airline'
 Plugin 'rking/ag.vim'
+Plugin 'casperin/vim-plus'
+
+" Syntax and indentation
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
-Plugin 'casperin/vim-plus'
+Plugin 'groenewege/vim-less'
+Plugin 'elzr/vim-json'
+Plugin 'wavded/vim-stylus'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
