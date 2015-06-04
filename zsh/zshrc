@@ -11,3 +11,7 @@ fi
 alias tma='tmux attach -t'
 alias tmn='tmux new -s'
 alias tml='tmux list-sessions'
+
+if [ -f ~/.backendserver ]; then
+    . ~/.backendserver
+fi
