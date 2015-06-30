@@ -40,3 +40,5 @@ function vol {
     amixer -D pulse sset Master $1%
 }
 
+alias tmux="TERM=screen-256color-bce tmux"
+
