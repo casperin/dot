@@ -18,6 +18,7 @@ Plugin 'mxw/vim-jsx'
 Plugin 'groenewege/vim-less'
 Plugin 'elzr/vim-json'
 Plugin 'wavded/vim-stylus'
+Plugin 'lambdatoast/elm.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
