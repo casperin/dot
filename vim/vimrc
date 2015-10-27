@@ -9,6 +9,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'bling/vim-airline'
+Plugin 'facebook/vim-flow.git'
 Plugin 'rking/ag.vim'
 Plugin 'casperin/vim-plus'
 
@@ -19,6 +20,7 @@ Plugin 'groenewege/vim-less'
 Plugin 'elzr/vim-json'
 Plugin 'wavded/vim-stylus'
 Plugin 'lambdatoast/elm.vim'
+Plugin 'airblade/vim-gitgutter'
 
 " All of your Plugins must be added before the following line
 call vundle#end()

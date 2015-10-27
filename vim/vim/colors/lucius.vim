@@ -1,7 +1,7 @@
 " ============================================================================
 " Name:     Lucius vim color scheme
 " Author:   Jonathan Filip <jfilip1024@gmail.com>
-" Version:  8.1.7
+" Version:  8.1.5
 " ----------------------------------------------------------------------------
 "
 " Light and dark color scheme for GUI and 256 color terminal.
@@ -242,7 +242,7 @@ endfunction
 " ============================================================================
 
 let s:normal_items = [
-            \ "ColorColumn", "Comment", "Conceal", "Constant", "Cursor", "CursorColumn",
+            \ "ColorColumn", "Comment", "Constant", "Cursor", "CursorColumn",
             \ "CursorIM", "CursorLine", "CursorLineNr", "DiffAdd", "DiffChange",
             \ "DiffDelete", "Directory", "Error", "ErrorMsg", "Identifier",
             \ "IncSearch", "LineNr", "MatchParen", "ModeMsg", "MoreMsg",
@@ -337,7 +337,6 @@ if s:style == "light"
     hi SpecialKey   guifg=#afd7af
     if s:contrast == "low"
         hi Comment      guifg=#9e9e9e
-        hi Conceal      guifg=#9e9e9e
         hi Constant     guifg=#d78700
         hi Directory    guifg=#00af87
         hi Identifier   guifg=#00af00
@@ -348,7 +347,6 @@ if s:style == "light"
         hi Type         guifg=#0087af
     else
         hi Comment      guifg=#808080
-        hi Conceal      guifg=#808080
         hi Constant     guifg=#af5f00
         hi Directory    guifg=#00875f
         hi Identifier   guifg=#008700
@@ -363,7 +361,6 @@ else
     hi SpecialKey   guifg=#5f875f
     if s:contrast == "low"
         hi Comment      guifg=#6c6c6c
-        hi Conceal      guifg=#6c6c6c
         hi Constant     guifg=#afaf87
         hi Directory    guifg=#87af87
         hi Identifier   guifg=#87af5f
@@ -374,7 +371,6 @@ else
         hi Type         guifg=#5fafaf
     elseif s:contrast == "high"
         hi Comment      guifg=#8a8a8a
-        hi Conceal      guifg=#8a8a8a
         hi Constant     guifg=#ffffd7
         hi Directory    guifg=#d7ffd7
         hi Identifier   guifg=#d7ffaf
@@ -385,7 +381,6 @@ else
         hi Type         guifg=#afffff
     else
         hi Comment      guifg=#808080
-        hi Conceal      guifg=#808080
         hi Constant     guifg=#d7d7af
         hi Directory    guifg=#afd7af
         hi Identifier   guifg=#afd787
@@ -430,7 +425,7 @@ else
     hi CursorColumn                 guibg=#444444
     hi CursorLine                   guibg=#444444
     hi IncSearch    guifg=bg
-    hi MatchParen   guifg=fg        guibg=#87af00
+    hi MatchParen   guifg=bg
     hi Search       guifg=bg
     hi Visual                       guibg=#005f87
     if s:contrast == "low"
@@ -438,6 +433,7 @@ else
         hi CursorIM                     guibg=#5f87af
         hi Error        guifg=#d75f5f   guibg=#870000
         hi IncSearch                    guibg=#00afaf
+        hi MatchParen                   guibg=#87af5f
         hi Search                       guibg=#d78700
         hi Todo         guifg=#afaf00   guibg=#5f5f00
     elseif s:contrast == "high"
@@ -445,6 +441,7 @@ else
         hi CursorIM                     guibg=#afd7ff
         hi Error        guifg=#ffafaf   guibg=#af0000
         hi IncSearch                    guibg=#87ffff
+        hi MatchParen                   guibg=#d7ff87
         hi Search                       guibg=#ffaf5f
         hi Todo         guifg=#ffff87   guibg=#87875f
     else
@@ -452,6 +449,7 @@ else
         hi CursorIM                     guibg=#87afd7
         hi Error        guifg=#ff8787   guibg=#870000
         hi IncSearch                    guibg=#5fd7d7
+        hi MatchParen                   guibg=#afd75f
         hi Search                       guibg=#d78700
         hi Todo         guifg=#d7d75f   guibg=#5f5f00
     endif
