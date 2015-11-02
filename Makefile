@@ -9,9 +9,9 @@ all:
 	-rm -f ~/.vim
 	-ln -s $(dir)/vim/vim ~/.vim
 	-ln -s $(dir)/vim/vimrc ~/.vimrc
-	-ln -s $(dir)/zsh/zpreztorc ~/.zpreztorc
-	-ln -s $(dir)/zsh/zprofile ~/.zprofile
-	-ln -s $(dir)/zsh/zshrc ~/.zshrc
+	#-ln -s $(dir)/zsh/zpreztorc ~/.zpreztorc
+	#-ln -s $(dir)/zsh/zprofile ~/.zprofile
+	#-ln -s $(dir)/zsh/zshrc ~/.zshrc
 	-cp ~/dot/git/gitconfig ~/.gitconfig
 
 	# Set up Vundle
@@ -19,6 +19,6 @@ all:
 	vim +PluginInstall +qall
 
 	# Set zsh as default shell
-	chsh -s /bin/zsh
+	#chsh -s /bin/zsh
 
 
