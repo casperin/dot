@@ -26,6 +26,7 @@ Plugin 'elzr/vim-json'
 Plugin 'wavded/vim-stylus'
 Plugin 'lambdatoast/elm.vim'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'rust-lang/rust.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
