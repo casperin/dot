@@ -17,6 +17,7 @@ Plugin 'bling/vim-airline'
 Plugin 'facebook/vim-flow.git'
 Plugin 'rking/ag.vim'
 Plugin 'casperin/vim-plus'
+Plugin 'majutsushi/tagbar'
 
 " Syntax and indentation
 Plugin 'pangloss/vim-javascript'
