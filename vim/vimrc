@@ -17,6 +17,7 @@ Plugin 'bling/vim-airline'
 Plugin 'facebook/vim-flow.git'
 Plugin 'rking/ag.vim'
 Plugin 'casperin/vim-plus'
+Plugin 'majutsushi/tagbar'
 
 " Syntax and indentation
 Plugin 'pangloss/vim-javascript'
@@ -26,8 +27,8 @@ Plugin 'elzr/vim-json'
 Plugin 'wavded/vim-stylus'
 Plugin 'lambdatoast/elm.vim'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'rust-lang/rust.vim'
 Plugin 'editorconfig/editorconfig-vim'
+Plugin 'rust-lang/rust.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
