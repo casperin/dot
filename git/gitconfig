@@ -4,6 +4,7 @@
     co = checkout
     br = branch
     lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    dsf = "!git diff --color $@ | diff-so-fancy"
 [user]
 	name = Gorm Casper
 	email = g@g.dk
