@@ -1,24 +1,27 @@
 dir := $(shell pwd)
 
 all:
-	-mkdir $(dir)/vim/vim
-	-mkdir $(dir)/vim/vim/bundle
-
-	# Create symlinks
 	-ln -s $(dir)/tmux/tmux.conf ~/.tmux.conf
+
+	# Vim
+	-mkdir -p $(dir)/vim/vim/bundle
 	-rm -f ~/.vim
 	-ln -s $(dir)/vim/vim ~/.vim
 	-ln -s $(dir)/vim/vimrc ~/.vimrc
-	#-ln -s $(dir)/zsh/zpreztorc ~/.zpreztorc
-	#-ln -s $(dir)/zsh/zprofile ~/.zprofile
-	#-ln -s $(dir)/zsh/zshrc ~/.zshrc
-	-cp ~/dot/git/gitconfig ~/.gitconfig
-
-	# Set up Vundle
 	-git clone https://github.com/gmarik/Vundle.vim.git $(dir)/vim/vim/bundle/Vundle.vim
 	vim +PluginInstall +qall
 
-	# Set zsh as default shell
-	#chsh -s /bin/zsh
+	# Neovim
+	mkdir -p .config/nvim
+	-ln -s $(dir)/vim/vimrc ~/.config/nvim/init.vim
+	-ln -s $(dir)/vim/colors ~/.config/nvim/colors
+	-cp ~/dot/git/gitconfig ~/.gitconfig
 
+	@[ -f ~/.bashrc ] && make linux --no-print-directory || true
 
+linux:
+	# Linux
+	mv ~/.bashrc ~/_bashrc
+	-ln -s $(dir)/bash/bashrc ~/.bashrc
+	-ln -s $(dir)/bash/bash_aliases ~/.bash_aliases
+	# I backed up your old .bashrc at ~/_bashrc, feel free to remove

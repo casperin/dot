@@ -1,8 +1,8 @@
-# /dot/
+# ~/dot/
 
 Clone the repo
 
-    git clone https://github.com/casperin/dot.git ~/dot
+    git clone https://github.com/casperin/dot.git ~
 
 Then run the Makefile
 
@@ -24,3 +24,4 @@ From https://github.com/ggreer/the_silver_searcher#building-from-source
     sudo make install
 
 ... and pray
+
