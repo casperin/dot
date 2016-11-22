@@ -129,8 +129,3 @@ export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 
 #export LC_ALL="en_US.UTF-8"
 
-export NVM_DIR="/Users/g/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
-# OPAM configuration
-. /Users/g/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
