@@ -130,8 +130,8 @@ export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 #export LC_ALL="en_US.UTF-8"
 
 
-export NVM_DIR="/home/g/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+#export NVM_DIR="/home/g/.nvm"
+#[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # http://unix.stackexchange.com/questions/72086/ctrl-s-hang-terminal-emulator
 stty -ixon
