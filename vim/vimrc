@@ -29,13 +29,16 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'groenewege/vim-less'
 Plugin 'elzr/vim-json'
+Plugin 'elixir-lang/vim-elixir'
 Plugin 'wavded/vim-stylus'
-Plugin 'lambdatoast/elm.vim'
+" Plugin 'lambdatoast/elm.vim'
+" Plugin 'avh4/elm-format'
+Plugin 'elmcast/elm-vim'
 Plugin 'fatih/vim-go'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'rust-lang/rust.vim'
-Plugin 'https://github.com/plasticboy/vim-markdown.git'
+Plugin 'plasticboy/vim-markdown.git'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
