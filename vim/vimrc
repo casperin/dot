@@ -30,6 +30,7 @@ Plugin 'mxw/vim-jsx'
 Plugin 'groenewege/vim-less'
 Plugin 'elzr/vim-json'
 Plugin 'elixir-lang/vim-elixir'
+Plugin 'slashmili/alchemist.vim'
 Plugin 'wavded/vim-stylus'
 " Plugin 'lambdatoast/elm.vim'
 " Plugin 'avh4/elm-format'
@@ -39,6 +40,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'rust-lang/rust.vim'
 Plugin 'plasticboy/vim-markdown.git'
+Plugin 'reasonml-editor/vim-reason'
 
 " All of your Plugins must be added before the following line
 call vundle#end()

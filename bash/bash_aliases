@@ -40,6 +40,8 @@ alias us='setxkbmap -layout us'
 alias tmux="TERM=screen-256color-bce tmux"
 alias tmd="tmux attach -t default"
 
+alias fzf="fzf --preview 'head -300 {}'"
+
 
 # Controls for terminals
 function vol {
